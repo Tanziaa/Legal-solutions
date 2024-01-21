@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legal Solution</title>
+    <title>Legal Solutions</title>
+    <link rel="icon" href="images/scale-balanced-solid.svg">
     <!-- tailwind and daisy UI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -28,8 +29,7 @@
             theme: {
                 extend: {
                     colors: {
-                        'gradient-start': '#FF8938',
-                        'gradient-end': '#F00',
+                        clifford: '#da373d',
                     }
                 }
             }
@@ -38,7 +38,7 @@
 
 
     <style>
-        .font-manrope {
+        .font-garamond {
             font-family: 'EB Garamond', serif;
         }
 
@@ -46,10 +46,69 @@
             font-family: 'Poppins', sans-serif;
         }
     </style>
-
 </head>
 
-<body>
+<body class="font-garamond">
+    <header class="md:container md:mx-auto">
+        <nav class=" flex justify-around">
+            <div class="navbar bg-base-100">
+                <div class="flex-1">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-base shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>News</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="mr-32 ml-64">
+                        <img src="images/logo2.png" alt="">
+                    </div>
+                    
+                <div class="navbar-center hidden lg:flex mr-32">
+                    <ul class="text-base menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>Services<i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a>Cases<i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a>Blog<i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a>Contact Us<i class="fa-solid fa-chevron-right"></i></a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <a class="btn bg-[#B68C5A] text-white">Free Consultation</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- banner -->
+
+        <div class=" min-h-screen w-[1170px] bg-no-repeat ml-48 mt-20" style="background-image: url(./images/banner.png);">
+            <div class="hero-overlay"></div>
+            <div class="hero-content justify-center text-neutral-content">
+              <div class="max-w-md pt-32">
+                <h1 class="mb-5 text-5xl font-extrabold text-white">We Provide Effective Legal Solutions</h1>
+                <p class="mb-5 text-[#E7E7E7]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                <input type="text" placeholder="Search your services" class="py-4 bg-white border-0 border-black w-[300px] h-[50px] rounded-lg" /> 
+                <button class="rounded-lg ml-2 bg-[#B68C5A] w-[100px] h-[50px] text-white">Search</button>
+              </div>
+            </div>
+          </div>
+    </header>
+    <main>
+        <!-- legal practice area section -->
+    </main>
+
+    <footer>
+
+    </footer>
 
 </body>
 
